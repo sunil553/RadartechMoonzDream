@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_speed_layout"
+    style="@style/wrap_wrap"
+    android:background="@drawable/popup_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/margin4">
+
+    <RadioButton
+        android:id="@+id/speed_select_very_slow"
+        style="@style/Radio_button"
+        android:tag="0"
+        android:text="@string/speed_very_slow" />
+
+    <RadioButton
+        android:id="@+id/speed_select_slow"
+        style="@style/Radio_button"
+        android:tag="1"
+        android:text="@string/speed_slow" />
+
+    <RadioButton
+        android:id="@+id/speed_select_normal"
+        style="@style/Radio_button"
+        android:tag="2"
+        android:text="@string/speed_normal" />
+
+    <RadioButton
+        android:id="@+id/speed_select_fast"
+        style="@style/Radio_button"
+        android:tag="3"
+        android:text="@string/speed_fast" />
+
+    <RadioButton
+        android:id="@+id/speed_select_very_fast"
+        style="@style/Radio_button"
+        android:tag="4"
+        android:text="@string/speed_very_fast"
+
+        />
+</LinearLayout>

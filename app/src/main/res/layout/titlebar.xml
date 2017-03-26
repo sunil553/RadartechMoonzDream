@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="53dp"
+    android:background="@color/menubar_bg">
+
+    <RelativeLayout
+        android:id="@+id/title_bar_normal"
+        style="@style/match_match">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            style="@style/wrap_wrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginStart="10.0dip"
+            android:background="@drawable/back_arrow_button"
+            android:contentDescription="@string/load_image_failed"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/style_title_text"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white" />
+
+        <!--visible only in settings device info and modify password-->
+        <ImageButton
+            android:id="@+id/ib_update_device_ok"
+            style="@style/wrap_wrap"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/right_ok_"
+            android:contentDescription="@string/load_image_failed"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+
+        <!--visible only in alarm list-->
+        <Button
+            android:id="@+id/ib_clear_alarmlist"
+            style="@style/create_new"
+            android:text="@string/clearallalarmbtn" />
+
+        <!--visible only in geofenceitem-->
+        <Button
+            android:id="@+id/btn_newgeofence"
+            style="@style/create_new"
+            android:text="New" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_bar_device_list"
+        style="@style/match_match"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/device_list_button_back"
+            style="@style/wrap_wrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginStart="15.0dip"
+            android:background="@drawable/menu_icon"
+            android:contentDescription="@string/load_image_failed" />
+
+        <TextView
+            style="@style/match_wrap"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/device_list_button_back"
+            android:layout_toRightOf="@+id/device_list_button_back"
+            android:text="@string/car_list"
+            android:textColor="@color/white_title"
+            android:textSize="@dimen/title_textsize" />
+
+        <ImageButton
+            android:id="@+id/ib_alarm"
+            style="@style/wrap_wrap"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:background="@drawable/alert_icon"
+            android:contentDescription="@string/load_image_failed" />
+
+        <TextView
+            android:id="@+id/tv_unread_alarm_count"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/ib_alarm"
+            android:layout_alignStart="@+id/ib_alarm"
+            android:layout_alignTop="@+id/ib_alarm"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:background="@drawable/notice_count"
+            android:gravity="center" android:padding="@dimen/margin2"
+            android:text="123"
+            android:textColor="@android:color/white"
+            android:textSize="7sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/ib_monitor"
+            style="@style/wrap_wrap"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/ib_alarm"
+            android:layout_toStartOf="@+id/ib_alarm"
+            android:background="@drawable/monitor_icon"
+            android:contentDescription="@string/load_image_failed" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

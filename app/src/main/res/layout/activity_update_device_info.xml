@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:background="@color/white_title"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <LinearLayout
+        style="@style/linearlayout_update_device"
+        android:id="@+id/ll_target_name"
+        >
+
+        <TextView
+
+            style="@style/ubdate_device"
+            android:text="@string/car_info_device_name"
+            />
+
+        <EditText
+            style="@style/edit_text_update_device"
+            android:id="@+id/et_update_device_device_name"
+            android:inputType="text"
+            android:text=""
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/division_line_1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@id/ll_target_name"
+        android:background="@color/bag_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_license_plate_no"
+        style="@style/linearlayout_update_device"
+        android:layout_below="@id/division_line_1"
+        >
+
+        <TextView
+            style="@style/ubdate_device"
+
+            android:text="@string/car_info_plate"
+
+            />
+
+        <EditText
+            style="@style/edit_text_update_device"
+            android:id="@+id/et_update_device_plate"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bag_color" />
+
+    <Spinner
+        android:id="@+id/vehicles_spinner"
+        style="@style/match_wrap" />
+
+</LinearLayout>

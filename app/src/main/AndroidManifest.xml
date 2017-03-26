@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.radartech.sw">
+
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+     The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended.
+    -->
+    <permission
+        android:name="com.radartech.sw.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.radartech.sw.permission.MAPS_RECEIVE" />
+
+    <permission
+        android:name="com.radartech.sw.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  Some system requires permission，Such as access to networks-->
+    <uses-permission android:name="com.radartech.sw.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name="com.radartech.RadartechApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="net.hockeyapp.android.appIdentifier" android:value="${HOCKEYAPP_APP_ID}" />
+
+
+        <!-- starting application from Splash screen activity -->
+        <activity
+            android:name="com.radartech.activity.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.radartech.activity.LoginActivity"
+
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.radartech.activity.DevicesListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.radartech.activity.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.radartech.activity.AlarmInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.radartech.activity.GeofenceItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.radartech.activity.GeofenceNewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.radartech.activity.DeviceTraceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.radartech.activity.UpdateDeviceInfoActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.radartech.activity.AlarmListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.radartech.activity.AccountInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.radartech.activity.ProviderInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.radartech.activity.ModifyPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.radartech.activity.NestedGoogleMapActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="jpushdemo.TestActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="jpush.testAction" />
+                <category android:name="jpush.testCategory" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Required
+SDK core functionality-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.radartech.sw" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required
+SDK core functionality-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+
+        <!-- Required SDK core functionality-->
+        <!-- You can configure the android: process parameter to place the PushService in another process -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option Optional. JPush services for different applications in the same device pull each other functions。 -->
+        <!--
+If you do not enable this feature to remove the component, will not pull up other applications can not be pulled up by other applications-->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.radartech.sw" />
+            </intent-filter>
+
+        </service>
+
+        <!-- Required SDK core functionality-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.radartech.sw" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+
+        </receiver>
+
+        <!-- Required
+SDK core functionality-->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+
+    <!--    &lt;!&ndash; User defined.  For test only  User-defined broadcast receivers&ndash;&gt;  -->
+        <receiver
+            android:name="jpushdemo.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+        <!--        &lt;!&ndash;Required  The user signs up for the intent of the SDK&ndash;&gt;
+        -->        <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+            <!--    &lt;!&ndash;Required
+The intent of the user to receive the SDK message&ndash;&gt;-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!--&lt;!&ndash;Required  The intent of the user to receive the SDK notification bar information&ndash;&gt;
+                -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+     <!--           &lt;!&ndash;Required  The user opens the intent of the custom notification bar&ndash;&gt;
+     -->           <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+<!--                &lt;!&ndash;OptionalThe intent of the user to accept the Rich Push Javascript callback function&ndash;&gt;
+ -->               <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!--&lt;!&ndash; Receive network changes connect / disconnect since 1.6.3 &ndash;&gt;-->
+                <category android:name="com.radartech.sw" />
+            </intent-filter>
+        </receiver>-->
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="bfff53b9836cd342e0f14437" /> <!--  </>
+The value comes from the AppKey obtained by the developer platform-->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBg9EMI3lSfIjN3OpCx8PXXs4CVEhljCAY" />
+
+
+    </application>
+
+</manifest>

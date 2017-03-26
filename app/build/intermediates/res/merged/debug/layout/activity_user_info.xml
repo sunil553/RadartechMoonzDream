@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:background="@color/menubar_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_account_info"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10.0dip">
+
+        <ImageView
+            android:id="@+id/iv_account_info_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/accout_image"
+            android:contentDescription="@string/load_image_failed" />
+
+        <TextView
+            android:id="@+id/tv_account_info_account"
+            style="@style/match_wrap"
+            android:layout_alignBottom="@id/iv_account_info_icon"
+            android:layout_margin="5.0dip"
+            android:layout_toEndOf="@id/iv_account_info_icon"
+            android:layout_toRightOf="@id/iv_account_info_icon"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/tv_account_info_name"
+            style="@style/match_wrap"
+            android:layout_above="@id/tv_account_info_account"
+            android:layout_margin="5.0dip"
+            android:layout_toEndOf="@id/iv_account_info_icon"
+            android:layout_toRightOf="@id/iv_account_info_icon"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <ImageView
+            android:id="@+id/iv_account_info_back"
+            style="@style/wrap_wrap"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:contentDescription="@string/load_image_failed"
+            android:src="@drawable/close_button" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_provider_info"
+        style="@style/match_wrap"
+        android:layout_marginTop="20.0dip">
+
+        <ImageView
+            android:id="@+id/iv_provider_icon"
+            style="@style/imageview_infoactivity"
+            android:background="@drawable/provideinfo_icon"
+            />
+
+        <TextView
+            android:id="@+id/iv_provider_title"
+            style="@style/info_activity"
+            android:layout_toEndOf="@id/iv_provider_icon"
+            android:layout_toRightOf="@id/iv_provider_icon"
+            android:text="@string/title_provider_info"
+
+
+
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/r2_account_info"
+        style="@style/match_wrap"
+        android:layout_below="@+id/rl_provider_info"
+        android:layout_marginTop="20.0dip">
+
+        <ImageView
+            android:id="@id/iv_provider_icon"
+            style="@style/imageview_infoactivity"
+            android:background="@drawable/account_info"
+
+            />
+
+        <TextView
+            android:id="@id/iv_provider_title"
+            style="@style/info_activity"
+            android:layout_toEndOf="@id/iv_provider_icon"
+            android:layout_toRightOf="@id/iv_provider_icon"
+            android:text="@string/title_account_info"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r3_currentversion_info"
+        style="@style/match_wrap"
+        android:layout_below="@+id/r2_account_info"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@id/iv_provider_icon"
+            style="@style/imageview_infoactivity"
+            android:background="@drawable/current_version"
+
+            />
+
+        <TextView
+            android:id="@id/iv_provider_title"
+            style="@style/info_activity"
+            android:layout_toEndOf="@id/iv_provider_icon"
+            android:layout_toRightOf="@id/iv_provider_icon"
+            android:text="@string/user_account_info_current_version"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_provider_exit_system"
+        style="@style/match_wrap"
+        android:layout_below="@+id/r3_currentversion_info"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/iv_exit_system_icon"
+            style="@style/imageview_infoactivity"
+            android:background="@drawable/logout_icon"
+
+            />
+
+        <TextView
+            android:id="@+id/iv_exit_system_title"
+            style="@style/info_activity"
+            android:layout_toEndOf="@id/iv_exit_system_icon"
+            android:layout_toRightOf="@id/iv_exit_system_icon"
+            android:text="@string/exit_system"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

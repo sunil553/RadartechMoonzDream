@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    >
+
+    <include
+        style="@style/match_match"
+        layout="@layout/base_fragment_google_map" />
+
+
+    <TextView
+        android:id="@+id/tv_address"
+        style="@style/style_location_info_text"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

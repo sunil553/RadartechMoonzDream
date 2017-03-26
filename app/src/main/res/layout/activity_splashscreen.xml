@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    style="@style/match_match"
+    android:background="@drawable/splashscreen"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/splashscreen"
+        style="@style/match_match"
+        android:src="@drawable/splashscreen"
+        android:visibility="invisible" />
+
+    <TextView
+        style="@style/wrap_wrap"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="@string/developer_version"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <include
+        layout="@layout/titlebar"
+        android:visibility="gone" />
+
+</RelativeLayout>

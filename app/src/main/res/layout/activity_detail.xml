@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout style="@style/match_match">
+
+        <fragment
+            android:id="@+id/map_monitor"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            style="@style/match_match" />
+
+        <ImageView
+            android:id="@+id/iv_monitor_map_satellite"
+            style="@style/map_images"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/load_image_failed"
+            android:src="@drawable/satellite_mode" />
+
+        <ImageView
+            android:id="@+id/iv_monitor_map_normal"
+            style="@style/map_images"
+            android:layout_toLeftOf="@+id/iv_monitor_map_satellite"
+            android:layout_toStartOf="@+id/iv_monitor_map_satellite"
+            android:contentDescription="@string/load_image_failed"
+            android:src="@drawable/normal_map" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/match_wrap"
+            android:layout_alignParentBottom="true"
+            android:background="@color/new_line_grey"
+            android:textColor="@color/white"
+            android:textSize="12.0sp" />
+    </RelativeLayout>
+</LinearLayout>

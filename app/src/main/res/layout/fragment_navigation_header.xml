@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_drawer_account_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_drawer_account_section_default_height"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    tools:layout_height="@dimen/nav_drawer_account_section_default_height">
+
+    <FrameLayout
+        style="@style/match_match"
+        android:foreground="@color/black_alpha_50">
+
+        <ImageView
+            android:id="@+id/navigation_drawer_user_account_picture_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_nav_drawer_account_background"
+            tools:ignore="ContentDescription" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/navigation_drawer_account_information"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/navigation_drawer_user_account_picture_profile"
+            android:layout_width="@dimen/nav_drawer_profile_image_size"
+            android:layout_height="@dimen/nav_drawer_profile_image_size"
+            android:src="@drawable/car_icon" />
+
+        <TextView
+            android:id="@+id/navigation_drawer_account_information_display_name"
+            style="@style/wrap_wrap"
+            android:textColor="@color/whiteColor" />
+
+    </LinearLayout>
+
+</FrameLayout>

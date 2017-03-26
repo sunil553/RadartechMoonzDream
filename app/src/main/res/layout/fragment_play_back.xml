@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/title_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/menubar_bg">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            style="@style/wrap_wrap"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginStart="10.0dip"
+            android:background="@drawable/back_arrow_button"
+            android:contentDescription="@string/load_image_failed"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/wrap_wrap"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/device_status_offline"
+            android:textColor="@color/white_title"
+            android:textSize="@dimen/title_textsize" />
+
+        <ImageButton
+            android:id="@+id/ib_device_trace_speed"
+            style="@style/speed_button"
+            android:layout_toLeftOf="@+id/ib_device_trace_time"
+            android:layout_toStartOf="@+id/ib_device_trace_time"
+            android:background="@drawable/speed_icon"
+            />
+
+        <ImageButton
+            android:id="@id/ib_device_trace_time"
+            style="@style/speed_button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/time_icon"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/playBar"
+            style="@style/match_wrap"
+            android:background="@color/black"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <CheckBox
+                android:id="@+id/ibtn_control"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/cbox_play"
+                android:button="@null" />
+
+            <SeekBar
+                android:id="@+id/sbar_history"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.19"
+                android:max="100"
+                android:maxHeight="6.0dip"
+                android:minHeight="6.0dip"
+                android:progress="0"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:secondaryProgress="0"
+                android:thumb="@drawable/sbar_thumb"
+                android:thumbOffset="0.0dip" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/wrap_wrap"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/black">
+
+            <TextView
+                android:id="@+id/playback_timer"
+                style="@style/wrap_wrap"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/playback_kms"
+                style="@style/wrap_wrap"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/playback_timer"
+                android:layout_toRightOf="@+id/playback_timer"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/playback_speed"
+                style="@style/wrap_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/base_fragment_google_map"  />
+
+</LinearLayout>
+

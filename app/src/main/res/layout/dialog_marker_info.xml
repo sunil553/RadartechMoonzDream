@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/marker_layout"
+    android:layout_width="@dimen/dialog_marker_width"
+    android:layout_height="@dimen/dialog_marker_height"
+    android:background="@drawable/infowindow_icon"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/info_title"
+        style="@style/style_dialog_marker_info_text"
+        android:text="@string/info_target_name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info_description"
+        style="@style/style_dialog_marker_info_text"
+        android:maxWidth="@dimen/info_window_width"
+        android:text="@string/info_alarm_type" />
+
+</LinearLayout>

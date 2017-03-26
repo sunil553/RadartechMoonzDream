@@ -1,0 +1,205 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    style="@style/match_match"
+    android:background="@drawable/tiledstripes" >
+
+    <LinearLayout
+        style="@style/match_match"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="20dip" >
+
+        <LinearLayout
+            style="@style/match_match"
+            android:layout_marginTop="10dip"
+            android:background="@color/app1_color"
+            android:orientation="vertical"
+            android:padding="10dip"
+            >
+
+            <TextView
+                style="@style/wrap_wrap"
+                android:text="Set Receive push time"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/match_match"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/corners_bg"
+            android:orientation="vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip" >
+
+            <LinearLayout
+                style="@style/match_match"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/wrap_wrap"
+                    android:text="Quiet Week Enabled"
+                    android:textSize="16dip" />
+            </LinearLayout>
+            <!--  -->
+
+            <LinearLayout
+                style="@style/match_match"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    style="@style/wrap_match"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        style="@style/match_wrap"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/cb_monday"
+                            style="@style/wrap_wrap"
+                             />
+
+                        <TextView
+                            style="@style/days_text"
+                            android:text="Monday"
+                             />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/match_wrap"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/cb_tuesday"
+                            style="@style/wrap_wrap"
+                             />
+
+                        <TextView
+                            style="@style/days_text"
+                            android:text="Tuesday"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/match_wrap"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/cb_wednesday"
+                            style="@style/wrap_wrap"
+                            
+                             />
+
+                        <TextView
+                            style="@style/days_text"
+                            android:text="Wednesday"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/match_wrap"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/cb_thursday"
+                            style="@style/wrap_wrap"
+                              />
+
+                        <TextView
+                            style="@style/days_text"
+                            android:text="Thursday"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/wrap_match"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        style="@style/match_wrap"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/cb_friday"
+                            style="@style/wrap_wrap"
+                            />
+
+                        <TextView
+                            style="@style/days_text"
+                            android:text="Friday"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/match_wrap"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/cb_saturday"
+                            style="@style/wrap_wrap"
+                            />
+
+                        <TextView
+                            style="@style/days_text"
+                            android:text="Saturday"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/match_wrap"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/cb_sunday"
+                            style="@style/wrap_wrap"
+                            />
+
+                        <TextView
+                            style="@style/days_text"
+                            android:text="Sunday"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/match_match"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/days_text"
+                    android:text="Quiet Time Enabled"
+                    />
+            </LinearLayout>
+
+            <TextView
+                style="@style/days_text"
+                android:text="Start Time"
+                />
+
+            <TimePicker
+                android:id="@+id/start_time"
+                style="@style/wrap_wrap"
+                />
+
+            <TextView
+                style="@style/days_text"
+                android:text="End Time"
+                />
+
+            <TimePicker
+                android:id="@+id/end_time"
+                style="@style/wrap_wrap"
+                />
+
+            <Button
+                android:id="@+id/bu_setTime"
+                style="@style/match_wrap"
+                android:layout_marginTop="20dip"
+                android:text="determine" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

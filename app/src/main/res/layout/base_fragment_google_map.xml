@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:layout_below="@+id/title_bar_layout">
+
+    <fragment
+        android:id="@+id/map_monitor"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        style="@style/match_match"
+        />
+
+    <ImageView
+        android:id="@+id/iv_monitor_map_satellite"
+        style="@style/map_images"
+        android:layout_marginTop="3dp"
+        android:layout_height="37dp"
+        android:layout_width="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/satellite_mode" />
+
+    <ImageView
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:id="@+id/iv_monitor_map_normal"
+        style="@style/map_images"
+        android:layout_toLeftOf="@id/iv_monitor_map_satellite"
+        android:layout_toStartOf="@id/iv_monitor_map_satellite"
+        android:src="@drawable/normal_map" />
+
+    <com.cardiomood.android.controls.gauge.SpeedometerGauge
+        android:layout_height="150dip"
+        android:layout_width="150dp"
+android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+
+        android:id="@+id/speedometer" />
+
+
+</RelativeLayout>

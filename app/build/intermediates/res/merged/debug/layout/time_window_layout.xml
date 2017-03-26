@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_time_layout"
+    style="@style/wrap_wrap" android:padding="@dimen/margin4"
+    android:background="@drawable/popup_bg"
+    android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/time_select_today"
+        style="@style/Radio_button"
+        android:tag="0"
+        android:text="@string/time_today"
+        />
+
+    <RadioButton
+        android:id="@+id/time_select_yestoday"
+        style="@style/wrap_wrap"
+        android:tag="1"
+        android:text="@string/time_yestoday"
+
+        />
+
+    <RadioButton
+        android:id="@+id/time_select_before_yestoday"
+        style="@style/wrap_wrap"
+        android:tag="2"
+        android:text="@string/time_before_yestoday"
+    />
+
+    <RadioButton
+        android:id="@+id/time_select_before_one_hour"
+        style="@style/wrap_wrap"
+        android:tag="3"
+        android:text="@string/time_before_one_hour"
+        />
+
+    <RadioButton
+        android:id="@+id/time_select_customer"
+        style="@style/wrap_wrap"
+        android:tag="4"
+        android:text="@string/time_customer"
+         />
+</LinearLayout>

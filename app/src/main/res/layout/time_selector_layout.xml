@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wrap_wrap"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/wrap_wrap"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/time_date"
+            android:text="@string/time_customer_date"
+            />
+
+        <TextView
+            android:id="@+id/time_selector_date"
+            style="@style/wrap_wrap"
+            android:layout_gravity="start|center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/input"
+            android:gravity="start|center"
+            android:paddingLeft="2dp"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/wrap_wrap"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/time_date"
+            android:layout_gravity="start|center"
+            android:text="@string/play_back_begin"
+            />
+
+        <TextView
+            style="@style/wrap_wrap"
+            android:id="@+id/time_selector_time"
+            android:layout_gravity="start|center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/input"
+            android:gravity="start|center"
+            android:paddingLeft="2dp"
+            android:textSize="20.0sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/wrap_wrap"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/time_date"
+            android:layout_gravity="start|center"
+            android:text="@string/play_back_end"
+            />
+        <TextView
+            style="@style/wrap_wrap"
+            android:id="@+id/time_selector_time_to"
+            android:layout_gravity="start|center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/input"
+            android:gravity="start|center"
+            android:paddingLeft="2dp"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

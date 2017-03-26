@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:background="@drawable/tiledstripes">
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:orientation="vertical"
+        android:padding="8dip">
+
+        <TextView
+            android:id="@+id/tv_regId"
+            style="@style/main_text"
+            />
+
+        <TextView
+            android:id="@+id/tv_appkey"
+            style="@style/main_text"
+            />
+
+        <TextView
+            android:id="@+id/tv_package"
+            style="@style/main_text"
+            />
+
+        <TextView
+            android:id="@+id/tv_imei"
+            style="@style/main_text"
+            />
+
+        <TextView
+            android:id="@+id/tv_device_id"
+            style="@style/main_text"
+            />
+
+        <TextView
+            android:id="@+id/tv_version"
+            style="@style/main_text"
+            />
+
+        <Button
+            android:id="@+id/init"
+            style="@style/main_xml"
+            android:text="initPush"
+            />
+
+        <Button
+            android:id="@+id/stopPush"
+            style="@style/main_xml"
+            android:text="stopPush" />
+
+        <Button
+            android:id="@+id/resumePush"
+            style="@style/main_xml"
+            android:text="resumePush" />
+
+        <Button
+            android:id="@+id/getRegistrationId"
+            style="@style/main_xml"
+            android:text="get_Registration_Id" />
+
+        <EditText
+            android:id="@+id/msg_rec"
+            style="@style/match_wrap"
+            android:layout_marginTop="8dip"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/setting"
+        style="@style/match_wrap"
+        android:layout_alignParentBottom="true"
+
+        android:text="Advanced features" />
+</RelativeLayout>

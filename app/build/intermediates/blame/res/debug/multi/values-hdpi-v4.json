@@ -1,0 +1,161 @@
+[
+    {
+        "outputFile": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 49,
+                    "endOffset": 100
+                },
+                "from": {
+                    "file": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 449,
+                        "endColumn": 49,
+                        "endOffset": 494
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 45,
+                    "endOffset": 146
+                },
+                "from": {
+                    "file": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 549,
+                        "endColumn": 45,
+                        "endOffset": 590
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 151,
+                    "endColumn": 51,
+                    "endOffset": 198
+                },
+                "from": {
+                    "file": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 598,
+                        "endColumn": 51,
+                        "endOffset": 645
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 203,
+                    "endColumn": 43,
+                    "endOffset": 242
+                },
+                "from": {
+                    "file": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 502,
+                        "endColumn": 43,
+                        "endOffset": 541
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 247,
+                    "endColumn": 51,
+                    "endOffset": 294
+                },
+                "from": {
+                    "file": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 345,
+                        "endColumn": 51,
+                        "endOffset": 392
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 299,
+                    "endColumn": 48,
+                    "endOffset": 343
+                },
+                "from": {
+                    "file": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 295,
+                        "endColumn": 48,
+                        "endOffset": 339
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 348,
+                    "endColumn": 49,
+                    "endOffset": 393
+                },
+                "from": {
+                    "file": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\src\\main\\res\\values-hdpi\\dimens.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 398,
+                        "endColumn": 49,
+                        "endOffset": 443
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 398,
+                    "endLine": 13,
+                    "endColumn": 13,
+                    "endOffset": 670
+                },
+                "from": {
+                    "file": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 6,
+                        "endColumn": 13,
+                        "endOffset": 327
+                    }
+                }
+            }
+        ]
+    }
+]

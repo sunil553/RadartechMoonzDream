@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="splash_delay">3000</integer>
+    <integer name="frag_transition_time">200</integer>
+    <integer name="shake_time">50</integer>
+    <integer name="article_columns">2</integer>
+
+
+    <!-- Navigation Drawer menuicons-->
+    <integer-array name="menu_icon">
+        <item>@drawable/accout_image</item>
+        <item>@drawable/account_info</item>
+        <item>@drawable/current_version</item>
+        <item>@drawable/about</item>
+        <item>@drawable/help</item>
+        <item>@drawable/logout_icon</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    style="@style/match_match"
+    android:background="@color/white_title">
+
+    <TextView
+        style="@style/match_wrap"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/geo_name_tv" />
+
+    <Switch
+        style="@style/Toggel_button"
+        android:id="@+id/geo_onof_toggle"
+        android:layout_gravity="right"
+        />
+
+
+</LinearLayout>

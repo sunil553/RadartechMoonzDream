@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomView">
+        <attr name="typeface"/>
+    </declare-styleable>
+
+    <attr name="typeface" format="enum">
+        <enum name="ubuntu" value="100"/>
+        <enum name="ubuntu_bold" value="101"/>
+        <enum name="ubuntu_medium" value="102"/>
+        <enum name="ubuntu_regular" value="103"/>
+    </attr>
+
+</resources>

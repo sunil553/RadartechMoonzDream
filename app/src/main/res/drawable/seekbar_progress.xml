@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <nine-patch android:src="@drawable/sbar_history_bg" android:dither="true" />
+    </item>
+    <item android:id="@android:id/progress">
+        <clip android:clipOrientation="horizontal"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <nine-patch android:src="@drawable/sbar_history2" android:dither="true" />
+        </clip>
+    </item>
+</layer-list>

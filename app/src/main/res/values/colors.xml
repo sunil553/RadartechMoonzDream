@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#00b5ef</color>
+    <color name="colorPrimaryDark">#27a0dd</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+
+    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_disabled">#ffaaaaaa</color>
+    <color name="common_signin_btn_dark_text_focused">@android:color/white</color>
+    <color name="common_signin_btn_light_text_default">#ff737373</color>
+    <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
+    <color name="common_signin_btn_light_text_disabled">#ffaaaaaa</color>
+    <color name="common_signin_btn_light_text_focused">#ff737373</color>
+    <color name="common_signin_btn_default_background">#ffdd4b39</color>
+    <color name="common_action_bar_splitter">#ffd2d2d2</color>
+    <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
+    <color name="wallet_dim_foreground_holo_dark">#ffbebebe</color>
+    <color name="wallet_dim_foreground_disabled_holo_dark">#80bebebe</color>
+    <color name="wallet_dim_foreground_inverse_holo_dark">#ff323232</color>
+    <color name="wallet_dim_foreground_inverse_disabled_holo_dark">#80323232</color>
+    <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="wallet_bright_foreground_holo_light">#ff000000</color>
+    <color name="wallet_hint_foreground_holo_light">#ff808080</color>
+    <color name="wallet_hint_foreground_holo_dark">#ff808080</color>
+    <color name="wallet_highlighted_text_holo_light">#6633b5e5</color>
+    <color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>
+    <color name="wallet_holo_blue_light">#ff33b5e5</color>
+    <color name="wallet_link_text_light">#ff0000ee</color>
+    <color name="tab_bg_slid">#ffd1d2dc</color>
+    <color name="tab_bg">#ffebebeb</color>
+    <color name="app_bg_color">#6f6f6f</color>
+
+
+
+    <color name="device_track_1">#bcbcbc</color>
+    <color name="device_track_2">#909090</color>
+
+
+
+    <color name="app1_color">#ffffff</color>
+    <color name="app_color">#bfbfbf</color>
+    <color name="bag_color">#ffc0c0c0</color>
+    <color name="bag1_color">#b3aaa7</color>
+    <color name="bag2_color">#d26767</color>
+    <color name="bag3_color">#e3fdff</color>
+    <color name="white">#a2a2a2</color>
+    <color name="white_title">#ffffff</color>
+    <color name="divider">#ffdddddd</color>
+    <color name="tab_text_color">#ff555555</color>
+    <color name="text_color">#286CA6</color>
+    <color name="text1_color">#6FA45E</color>
+    <color name="black">#ff000000</color>
+    <color name="black2">#88000000</color>
+    <color name="black2_new">#ff464646</color>
+    <color name="black2_90">#ff909090</color>
+    <color name="bg_light_gray">#ea363634</color>
+    <color name="text_blue">#ff4261b4</color>
+    <color name="light_blue">#ff94cde9</color>
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="gray_divider">#ffb9b9b9</color>
+    <color name="body_text_1">#ff000000</color>
+    <color name="body_text_2">#99000000</color>
+    <color name="body_text_disabled">#66000000</color>
+    <color name="body_text_1_inverse">#ffffffff</color>
+    <color name="body_text_2_inverse">#99ffffff</color>
+    <color name="accent_1">#4a9344</color>
+    <color name="hyperlink">#ffff549f</color>
+    <color name="background_1">#ffffffff</color>
+    <color name="whats_on_separator">#4d000000</color>
+    <color name="all_track_color">#ff222222</color>
+    <color name="block_column_1">#ff0fabff</color>
+    <color name="block_column_2">#ffdf1831</color>
+    <color name="block_column_3">#ff009939</color>
+    <color name="linearclick">#ffaac2ff</color>
+    <color name="linear">#ff374e91</color>
+    <color name="tab_selected_bg">#ff4460aa</color>
+    <color name="tab_selected_bg_test">#ffeaedf2</color>
+    <color name="tab_selected_bg_test2">#ff4460aa</color>
+    <color name="tab_selected_qq_bg">#ff142a64</color>
+    <color name="set_press">#ff94cde9</color>
+    <color name="set_normal_send">#ffffffff</color>
+    <color name="set_normal">#fff8f8f8</color>
+    <color name="log_normal">#ff47afe2</color>
+    <color name="log_press">#ff436dbb</color>
+    <color name="actionbar_separator">#ff3a5fcd</color>
+    <color name="actionbar_background_start">#ff3a5fcd</color>
+    <color name="actionbar_background_end">#ff27408b</color>
+    <color name="actionbar_title">#ffffffff</color>
+    <color name="actionbar_background_item_pressed_start">#bfbfbf</color>
+    <color name="actionbar_background_item_pressed_end">#bfbfbf</color>
+    <color name="umeng_fb_color_btn_pressed">#ff1495f7</color>
+    <color name="umeng_fb_color_btn_normal">#ff333333</color>
+    <color name="new_line_grey">#ffcccccc</color>
+    <color name="new_line_darkgrey">#ff209349</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="gray">#ff888888</color>
+    <color name="menubar_bg">#ff6100</color>
+
+    <!--navigation colors-->
+    <color name="dark_blue">#005189</color>
+    <color name="menu_separator_color">#66FFFFFF</color>
+    <color name="geofence_save_blue">#00d17a</color>
+    <color name="green_color">#00d17a</color>
+
+    <color name="button_color">#56b5e5</color>
+    <color name="edittext_hint">#88959c</color>
+    <color name="text_color_dark_blue">#0D406A</color>
+    <color name="dialog_content_text_color">@color/edittext_hint</color>
+
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="black_alpha_50">#80000000</color>
+    <color name="myDrawerBackground">#F2F2F2</color>
+
+</resources>

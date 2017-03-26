@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_efencename"
+        style="@style/match_wrap"
+        android:layout_marginTop="5.0sp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:id="@+id/tv_efencename"
+            style="@style/millage_textview"
+            android:text="@string/begin_time"
+
+
+            />
+
+        <TextView
+            style="@style/dialoge_playback_testview"
+            android:id="@+id/tv_from"
+            android:hint="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/rl_phonenumber"
+        style="@style/match_wrap"
+        android:layout_marginTop="5.0sp">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_phonenumber"
+            style="@style/millage_textview"
+            android:text="@string/end_time"
+            />
+
+        <TextView
+            android:id="@+id/tv_to"
+            style="@style/dialoge_playback_testview"
+      />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/rl_phonenumber"
+        style="@style/match_wrap"
+        android:layout_marginTop="5.0sp">
+
+        <TextView
+            android:id="@+id/tv_milage"
+            style="@style/millage_textview"
+            android:text="Total Distance"
+            />
+
+        <TextView
+            android:id="@+id/tv_milage_et"
+            style="@style/dialoge_playback_testview"
+            />
+    </LinearLayout>
+
+</LinearLayout>

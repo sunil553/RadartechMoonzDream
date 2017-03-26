@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/titlebar"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_geofence"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/menubar_bg">
+
+        <ImageButton
+            android:id="@+id/ib_geofence_back"
+            style="@style/wrap_wrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/back_arrow_button"
+            android:contentDescription="@string/load_image_failed" />
+
+        <TextView
+            android:id="@+id/tv_geofence_title"
+            style="@style/wrap_wrap"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white_title"
+            android:text="Create New"
+            android:textSize="22.0sp" />
+
+        <ImageButton
+            android:id="@+id/ib_geofence_polygon"
+            style="@style/activity_create"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/polygon"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/ib_geofence_circle"
+            style="@style/activity_create"
+            android:layout_toLeftOf="@id/ib_geofence_polygon"
+            android:layout_toStartOf="@id/ib_geofence_polygon"
+            android:background="@drawable/circle" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/match_match"
+
+        >
+
+        <fragment
+            android:id="@+id/map_monitor"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            style="@style/match_match"
+
+            android:layout_above="@+id/rl_panel" />
+
+        <ImageView
+            android:id="@+id/iv_alarm_map_satellite"
+            style="@style/wrap_wrap"
+            android:layout_width="35dp"
+            android:layout_marginTop="72dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/load_image_failed"
+            android:src="@drawable/satellite_mode" />
+
+        <ImageView
+            android:id="@+id/iv_alarm_map_normal"
+            style="@style/wrap_wrap"
+            android:layout_marginTop="70dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/iv_alarm_map_satellite"
+            android:layout_toStartOf="@id/iv_alarm_map_satellite"
+            android:contentDescription="@string/load_image_failed"
+            android:src="@drawable/normal_map" />
+
+
+        <ImageView
+            android:id="@+id/img_range"
+            style="@style/match_match"
+            android:layout_centerInParent="true"
+            android:contentDescription="" />
+
+        <View
+            android:id="@+id/center_anchor"
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/tv_fence_radius"
+            style="@style/wrap_wrap"
+            android:layout_below="@id/center_anchor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_seekbar"
+            style="@style/wrap_wrap"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/fence_radius_bg">
+
+            <ImageButton
+                android:id="@+id/ib_reduce_radius"
+                style="@style/wrap_wrap"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/sbar_reduce"
+                android:contentDescription="" />
+
+            <ImageButton
+                android:id="@+id/ib_increase_radius"
+                style="@style/wrap_wrap"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/sbar_increase"
+                android:contentDescription="" />
+
+            <SeekBar
+                android:id="@+id/sbar_fence_radius"
+                style="@style/match_wrap"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/ib_increase_radius"
+                android:layout_toRightOf="@id/ib_reduce_radius"
+                android:layout_toStartOf="@id/ib_increase_radius"
+                android:max="48"
+                android:maxHeight="7dp"
+                android:minHeight="7dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:thumb="@drawable/sbar_thumb"
+                android:thumbOffset="0.0dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_panel"
+            style="@style/match_wrap"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_fence_tip"
+                style="@style/match_wrap"
+                android:layout_gravity="center_vertical"
+                android:text="@string/fencetip_circle"
+                android:textColor="@android:color/white"
+                android:textSize="14.0sp" />
+
+            <!--<LinearLayout
+                android:id="@id/choose_polygon_fence"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@id/btn_reset_polygon_fence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_blue"
+                    android:text="重置围栏"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+
+                <Button
+                    android:id="@id/btn_set_polygon_fence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_blue"
+                    android:text="设置多边形围栏"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+            </LinearLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/choose_circle_fence"
+                style="@style/wrap_wrap"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_set_circle_fence"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/button_blue"
+                    android:text="@string/save_fence"
+                    android:textColor="@android:color/white"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/choose_polygon_fence"
+                style="@style/wrap_wrap"
+                android:layout_marginTop="4dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_reset_polygon_fence"
+                    style="@style/button_size"
+                    android:layout_marginLeft="20dp"
+                    android:text="Reset" />
+
+                <Button
+                    android:id="@+id/btn_set_polygon_fence"
+                    style="@style/button_size"
+                    android:layout_marginLeft="90dp"
+                    android:text="@string/save_fence" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ibtn_carposition"
+            style="@style/wrap_wrap"
+            android:layout_above="@id/rl_panel"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:src="@drawable/fence_use_car_location" />
+    </RelativeLayout>
+</LinearLayout>

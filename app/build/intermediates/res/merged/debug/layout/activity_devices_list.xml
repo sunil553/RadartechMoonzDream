@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    style="@style/match_match"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    android:splitMotionEvents="false"
+    tools:openDrawer="start">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/match_match"
+        android:background="#c2c2c2"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/titlebar" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/device_list"
+            style="@style/match_wrap"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+    <!-- Navigation Drawer-->
+    <include layout="@layout/fragment_navigation_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

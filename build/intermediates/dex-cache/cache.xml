@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.1\b9d63507329a7178e026fc334f87587ee5070ac5\gson-2.6.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\gson-2.6.1_48538ed5cbe7b08a1c30946c2c87a1e8bc0c8787.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.9.0\f824591a0016efbaeddb8300bee54832a1398cfa\okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\okio-1.9.0_911af0aad9b241bdba33e02218d402b883c88427.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.4.0_881c271b39790e343755446b9e41765f53f30aa7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_f70fe36e1a1ecc64f463df69b1c87fda6d891004.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_a5851fc638e77ee0b5c5cd54afafc6587846471e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_4648b77fcbe237ddb227074052d1719beb494f8b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\adapter-rxjava\2.0.2\a60c039ba54c73d1133b72178e1b04133c73d13d\adapter-rxjava-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a60c039ba54c73d1133b72178e1b04133c73d13d">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\adapter-rxjava-2.0.2_11ebfd45fdb207c2594ac2cdf6173f8a370405d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.4.0_96f993bf8295d3e6bc91cdc47013a85aa54127cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_68a77d1041a41d975b9d33b9924f6da0c2fd25c8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\glide-3.7.0_903f4a53f792cc31bdadee90cbaa2e0836171dc7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.2\43eeae0b9fb087bb3194ba59ab63a38a32fbf3e\retrofit-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\retrofit-2.0.2_cf608bb9763f828f11a621e5ddc3196423b3bf73.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.4.1\63994437f62bc861bc20c605d12962f7246116d1\okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.4.1_660a16d672f3aeabccc82cd117ab922dc0af9b0a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ac6948cce36f694f3eb3d73a135e298dc4b3527a">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\de.hdodenhof-circleimageview-1.3.0_ed719ef5774ee1aec7405a309f34ebcc5a191c12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_d2688abcedcbb64fc5840faa4bd477e4ab68f0c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.1.0\support-annotations-24.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8a23146e1a8c7cb4758e3d3f62449213f1e51f67">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\support-annotations-24.1.0_2892719393cb00283d59f6ed283abe19a5c64a6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.2\f8d87f15b94b8d74e7ccf61d7eedb558811cdb30\converter-gson-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\converter-gson-2.0.2_708c459c7c3d51ac6d04a7645d6c9def4a69f7e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\butterknife-annotations-8.4.0_91bb4555003e311a7a43728cb03b98fc7945bd0f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.1.1\b494968f6050d494de55dc3ce005e59c7eb40012\rxjava-1.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b494968f6050d494de55dc3ce005e59c7eb40012">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\rxjava-1.1.1_dd37b11b77533e4379376093e4ca6cedeeeb13ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_2c2b6e22bf44f1a50cd5c79522093f72781ea864.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\src\main\libs\jpush-android-2.1.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="99c80319fb45b23fbc516787fdd3cf8940fda4b2">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\jpush-android-2.1.9_774d20d89f0e8dafb22979e99276ab9d03f5b69f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.4.0_7bb3846910797a3414169aaaf85bb69ae9f5048b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_4a1c0412bef14f43a2eaf0d19015694891f24179.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\exploded-aar\net.hockeyapp.android\HockeySDK\4.1.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="71c0d9292161cbd9cac50885517412cc1b0f79b3">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\net.hockeyapp.android-HockeySDK-4.1.3_a3815955349b8e14c7a2bd791a221b63e2fa8928.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.4.1\c7c4f9e35c2fd5900da24f9872e3971801f08ce0\okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\okhttp-3.4.1_15de2271c2eac7e04548d1ff07f102f4712ce6af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\com.jakewharton-butterknife-8.4.0_757800fe99af231ab864639eb8eca24ea715ba4a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\exploded-aar\io.reactivex\rxandroid\1.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d4c4b83de2f6412072d2a29b1b7a5b03edaad5ff">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\io.reactivex-rxandroid-1.1.0_a6a8deb44c1c2c68932f57f33ea66aa1ecaa440a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e454c414a069241ee08444d187f2dd3a702596b5">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-9.4.0_bef709d893457141a952f1784bec3ece0225e0a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\exploded-aar\com.cardiomood.android\android-widgets\0.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c05b677d8aca4e437294460acbc6f4d4bd9cfa0c">
+        <dex dex="C:\Users\sandeep\Desktop\dummy\ActionBarMenu\Radartech\app\build\intermediates\pre-dexed\debug\com.cardiomood.android-android-widgets-0.1.1_712993816b9680293f4ece4b0e82de73dd386a35.jar" />
+    </item>
+
+</items>

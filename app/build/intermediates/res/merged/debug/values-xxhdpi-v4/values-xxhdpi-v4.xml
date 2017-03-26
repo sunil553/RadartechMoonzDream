@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="custom_popup_window_height">60dp</dimen>
+    <dimen name="login_base_padding">15dp</dimen>
+    <dimen name="login_padding_bottom">5dp</dimen>
+    <dimen name="login_top_individual">15dp</dimen>
+    <dimen name="login_top_padding">123dp</dimen>
+    <dimen name="login_top_username">70dp</dimen>
+    <dimen name="size">32dp</dimen>
+    <dimen name="size1">5dp</dimen>
+    <dimen name="size2">2dp</dimen>
+</resources>

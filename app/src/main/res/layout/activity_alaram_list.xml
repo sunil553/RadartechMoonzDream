@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_alarmlist_title"
+    style="@style/match_match"
+    android:background="@color/white_title"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/titlebar" />
+
+    <TextView
+        android:id="@+id/tv_list_status"
+        style="@style/match_match"
+        android:text="@string/alarm_no_unreaddata"
+        android:visibility="gone"/>
+    <ListView
+        android:id="@+id/lv_alarmlist"
+        style="@style/match_wrap" />
+
+</LinearLayout>
+
+
+

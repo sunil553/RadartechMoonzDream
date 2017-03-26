@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_efencename"
+        style="@style/match_wrap"
+        android:layout_marginTop="5.0sp"
+        >
+
+        <TextView
+            android:id="@+id/tv_must"
+           style="@style/wrap_wrap"
+            android:layout_marginLeft="5.0sp"
+            android:layout_marginStart="5.0sp"
+            android:singleLine="false"
+            android:text="*"
+            android:textColor="@color/block_column_2"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/tv_efencename"
+            style="@style/dialog_frnce_info_textview"
+            android:text="@string/efencename"
+
+            />
+
+        <EditText
+            android:id="@+id/et_efencename"
+            style="@style/match_wrap"
+            android:hint="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_phonenumber"
+        style="@style/match_wrap"
+        android:layout_marginTop="5.0sp"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_phonenumber"
+            style="@style/dialog_frnce_info_textview"
+            android:text="@string/phonenumber"
+            />
+
+        <EditText
+            android:id="@+id/et_phonenumber"
+            style="@style/match_wrap"
+            android:hint=""
+            android:inputType="phone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_alarmtype"
+        style="@style/match_wrap"
+        android:layout_marginTop="5.0sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_alarmtype"
+            style="@style/dialog_frnce_info_textview"
+            android:layout_centerVertical="true"
+            android:text="@string/fence_alarmtype"
+            />
+
+        <RadioGroup
+            android:id="@+id/rdog_alarmtype"
+            style="@style/wrap_wrap"
+            android:contentDescription="alarmtype"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_in"
+                style="@style/wrap_wrap"
+                android:checked="true"
+                android:text="@string/fence_alarm_in" />
+
+            <RadioButton
+                android:id="@+id/radio_out"
+                style="@style/wrap_wrap"
+                android:text="@string/fence_alarm_out" />
+
+            <RadioButton
+                android:id="@+id/radio_inout"
+                style="@style/wrap_wrap"
+                android:text="@string/fence_alarm_inout" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

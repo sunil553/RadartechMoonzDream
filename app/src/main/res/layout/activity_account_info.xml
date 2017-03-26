@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:background="@color/app_color"
+    android:orientation="vertical">
+    <include layout="@layout/titlebar" />
+
+
+    <ImageView
+        style="@style/wrap_wrap"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+
+        android:contentDescription="@string/load_image_failed"
+        android:src="@drawable/profile_image" />
+
+    <ListView
+        android:id="@+id/account_info_list"
+        style="@style/match_match"
+        android:background="@color/white_title"
+       />
+
+</LinearLayout>

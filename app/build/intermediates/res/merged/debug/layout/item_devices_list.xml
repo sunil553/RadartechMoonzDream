@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wrap_wrap"
+    android:background="@color/app1_color"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/device_icon"
+        style="@style/wrap_wrap"
+        android:src="@drawable/car_icon" />
+
+    <ImageView
+        android:id="@+id/navigation_icon"
+        style="@style/wrap_wrap"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/right_arrow"
+        />
+
+
+    <TextView
+        android:id="@+id/device_title"
+        style="@style/wrap_wrap"
+        android:layout_toRightOf="@id/device_icon"
+        android:text="rajesh"
+        android:textColor="@color/white"
+        android:textSize="@dimen/device_title_textsize" />
+
+    <TextView
+        android:id="@+id/device_status"
+        style="@style/wrap_wrap"
+        android:layout_below="@id/device_title"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/device_icon"
+        android:text="OFFLINE"
+        android:textColor="@color/white"
+        android:textSize="@dimen/device_tag_textsize" />
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        style="@style/match_wrap"
+        android:background="@color/white_title"
+        android:textColor="@color/black"
+        android:textSize="20.0sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:background="@color/white_title"
+        android:id="@+id/lv_geofencelist"
+        style="@style/match_match"
+        android:layout_below="@+id/tv_info"  />
+</LinearLayout>

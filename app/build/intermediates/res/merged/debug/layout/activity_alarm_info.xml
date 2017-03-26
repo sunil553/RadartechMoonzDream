@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:background="@color/white_title"
+    android:orientation="vertical">
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/rel_unread_alarm"
+        style="@style/relative_layout"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_alarm_title"
+            style="@style/textcolore"
+            android:text="@string/unreadalarm"
+            />
+
+        <TextView
+            android:id="@+id/unread_alarm_count"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toEndOf="@id/tv_alarm_title"
+            android:layout_toRightOf="@id/tv_alarm_title"
+            android:background="@drawable/notice_count"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="12.0sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            style="@style/right_icon"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.20000005dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:contentDescription="@string/load_image_failed" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/relative_layout"
+        android:id="@+id/rel_all_alarm"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rel_unread_alarm"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+           style="@style/textcolore"
+
+            android:text="@string/allalarm"
+            />
+
+        <ImageView
+            style="@style/right_icon"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.20000005dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:contentDescription="@string/load_image_failed" />
+    </RelativeLayout>
+</LinearLayout>
