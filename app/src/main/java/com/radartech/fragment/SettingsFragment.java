@@ -41,6 +41,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.radartech.activity.GeofenceItemActivity;
 import com.radartech.activity.UpdateDeviceInfoActivty;
 import com.radartech.adapter.InfoListAdapter;
@@ -260,6 +261,8 @@ public class SettingsFragment extends BaseFragment implements AdapterView.OnItem
         }
         Glide.with(imcaricon.getContext())
                 .load(absolutePath) // or URI/path
+                .diskCacheStrategy(DiskCacheStrategy.NONE)
+                .skipMemoryCache(true)
                 .error(R.drawable.car_icon)
                 .into(imcaricon); //imageview to set thumbnail to
 
@@ -498,7 +501,7 @@ public class SettingsFragment extends BaseFragment implements AdapterView.OnItem
                     JSONObject jsono = new JSONObject(response.toString());
                     int errorcode = jsono.getInt("errorcode");
                     if (errorcode == 0) {
-                        SharedPreferenceUtils.writeInteger(aDeviceId + AppConstants.PreferenceConstants.DEVICE_OVER_SPEED, mOverSpeed);
+                        SharedPreferenceUtils.writeInteger(aDeviceId + PreferenceConstants.DEVICE_OVER_SPEED, mOverSpeed);
                         UiUtils.showToast(getActivity(), getString(R.string.api_overspeed_message));
                         Utility.showLogMessage("data", "datadata" + "SUCCESSFULLY READ");
                     } else {

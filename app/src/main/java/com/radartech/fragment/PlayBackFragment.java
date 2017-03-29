@@ -29,22 +29,18 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
-import android.graphics.Point;
 import android.graphics.drawable.BitmapDrawable;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.SystemClock;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
@@ -61,7 +57,6 @@ import com.cardiomood.android.controls.gauge.SpeedometerGauge;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.Projection;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
@@ -218,7 +213,7 @@ public class PlayBackFragment extends BaseGoogleMapFragment {
                     resetTimerData();
                 }
                 while (latLngPlottedList.size() < updatedPoint) {
-                    addMapMarker();
+                    addMapMarker(false);
                 }
                 startRepeatingTask();
             }
@@ -243,7 +238,7 @@ public class PlayBackFragment extends BaseGoogleMapFragment {
     private Runnable mStatusChecker = new Runnable() {
         @Override
         public void run() {
-            addMapMarker();
+            addMapMarker(true);
         }
     };
 
@@ -445,7 +440,7 @@ public class PlayBackFragment extends BaseGoogleMapFragment {
                     latLngPlottedList.clear();
                     parkTimeList.clear();
                     mGoogleMap.clear();
-                    addMapMarker();
+                    addMapMarker(false);
                     startRepeatingTask();
                 }
             }
@@ -643,7 +638,7 @@ public class PlayBackFragment extends BaseGoogleMapFragment {
         callPlayBackAPI();
     }
 
-    private void addMapMarker() {
+    private void addMapMarker(boolean calTimer) {
 
         if (carLatLngList == null) {
             return;
@@ -794,7 +789,9 @@ public class PlayBackFragment extends BaseGoogleMapFragment {
 
         sbar_history.setProgress((latLngPlottedList.size() * 100) / carLatLngList.size());
 
-        mHandler.postDelayed(mStatusChecker, mInterval);
+        if (calTimer) {
+            mHandler.postDelayed(mStatusChecker, mInterval);
+        }
     }
 
     private String getYesterdayStartDateString() {

@@ -20,7 +20,9 @@
 
 package com.radartech.fragment;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -29,6 +31,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdate;
@@ -53,6 +56,7 @@ import com.radartech.util.Utility;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -77,6 +81,9 @@ public class TrackFragment extends BaseGoogleMapFragment {
     @BindView(R.id.title)
     TextView mDeviceName;
 
+    @BindView(R.id.iv_direction)
+    ImageView mDeviceDirection;
+
     private int aDeviceId;
     private int aOverSpeed;
     private String aDeviceName;
@@ -97,6 +104,7 @@ public class TrackFragment extends BaseGoogleMapFragment {
             callTrackAPI();
         }
     };
+    private Double mLongitude,mLatitude;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -113,7 +121,9 @@ public class TrackFragment extends BaseGoogleMapFragment {
     }
 
     private void initViews() {
-
+        if (this instanceof TrackFragment){
+            mDeviceDirection.setVisibility(View.VISIBLE);
+        }
         carDeviceList = new ArrayList<>();
         latLngPlottedList = new ArrayList<>();
         Bundle bundle = this.getArguments();
@@ -123,6 +133,22 @@ public class TrackFragment extends BaseGoogleMapFragment {
         mDeviceName.setText(aDeviceName);
 
         loadMap();
+    }
+
+    @OnClick(R.id.iv_direction)
+    public void onClickMapNormal(View v) {
+/*//        Uri uri = Uri.parse("http://maps.google.com/?q="+mLatitude.toString()+","+mLongitude.toString()); // missing 'http://' will cause crashed
+        String uri = String.format(Locale.ENGLISH, "geo:%f,%f", mLatitude.floatValue(), mLongitude.floatValue());
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+        startActivity(intent);*/
+
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("geo:0,0?q=" + (mLatitude.toString()+","+ mLongitude.toString())));
+        try {
+            startActivity(intent);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -252,6 +278,8 @@ public class TrackFragment extends BaseGoogleMapFragment {
             LatLng destLatLng = latLngPlottedList.get(plottedListSize);
             alat = trackResponse.getLat();
             aLong = trackResponse.getLng();
+            mLatitude = trackResponse.getLat();
+            mLongitude = trackResponse.getLng();
 
             LocationAddress locationAddress = new LocationAddress();
             locationAddress.getAddressFromLocation(alat, aLong, getContext(), new GeocoderHandler());

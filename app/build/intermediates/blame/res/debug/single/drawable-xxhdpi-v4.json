@@ -276,12 +276,12 @@
         "source": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
-        "source": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\message_icon.jpg",
         "source": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\src\\main\\res\\drawable-xxhdpi\\message_icon.jpg"
+    },
+    {
+        "merged": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\sandeep\\Desktop\\dummy\\ActionBarMenu\\Radartech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",

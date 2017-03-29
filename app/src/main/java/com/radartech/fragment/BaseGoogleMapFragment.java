@@ -25,6 +25,9 @@ public class BaseGoogleMapFragment extends BaseFragment implements OnMapReadyCal
     }
 
     public void loadMap() {
+        if (this instanceof TrackFragment){
+
+        }
         SupportMapFragment mapFragment = SupportMapFragment.newInstance();
         getActivity().getSupportFragmentManager().beginTransaction().add(R.id.map_monitor, mapFragment).commit();
         mapFragment.getMapAsync(this);
